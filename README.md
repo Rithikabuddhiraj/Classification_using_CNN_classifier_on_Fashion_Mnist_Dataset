@@ -1,100 +1,59 @@
-Here's a complete `README.md` file for your GitHub project:
-**[Classification using CNN on Fashion MNIST Dataset with Flask Deployment](https://github.com/Rithikabuddhiraj/Classification_using_CNN_classifier_on_Fashion_Mnist_Dataset.git)**
+# 🧥 Clothing Item Classification using CNN | Flask-Deployed Fashion Image Recognition
 
----
+## 📌 Overview
 
-```markdown
-# 👗 Classification using CNN on Fashion MNIST Dataset
+This project implements a Convolutional Neural Network (CNN) to classify fashion items from grayscale images in the Fashion MNIST dataset. The model is trained to recognize clothing categories such as shirts, shoes, bags, and more. A user-friendly Flask web interface allows real-time image upload and prediction.
 
-This project demonstrates how to build a Convolutional Neural Network (CNN) to classify images from the Fashion MNIST dataset and deploy the model using a Flask web application.
+## 🚀 Key Features
 
----
+* 🔍 Built and trained a CNN model using TensorFlow & Keras.
+* 🧠 Achieved high classification accuracy on unseen fashion item images.
+* 🌐 Integrated Flask to deploy the model as a web-based application.
+* 🖼️ Allows users to upload fashion item images for instant prediction.
+* 📊 Visualizes model performance with loss/accuracy plots.
 
-## 📌 Project Overview
+## ⚙️ Tech Stack
 
-- **Dataset**: Fashion MNIST – A dataset of 28x28 grayscale images of 10 clothing categories.
-- **Model**: Convolutional Neural Network (CNN) built using TensorFlow/Keras.
-- **Deployment**: Flask-based web app where users can upload an image and receive a predicted clothing class.
-- **Frontend**: Simple HTML (`index.html`, `result.html`) for user interaction.
-
----
-
-## 📂 Folder Structure
-
-```
-
-├── static/
-│   └── uploaded\_image.png        # Stores the user-uploaded image
-├── templates/
-│   ├── index.html                # Upload form page
-│   └── result.html               # Displays the prediction
-├── fashion\_model.h5             # Trained CNN model file
-├── app.py                       # Flask backend for image handling & prediction
-├── requirements.txt             # Required Python packages
-└── README.md                    # This file
-
-````
-
----
-
-## 🧠 Model Architecture
-
-The CNN model includes:
-- Convolutional layers with ReLU activation
-- MaxPooling layers for downsampling
-- Flatten and Dense layers
-- Softmax output for multiclass classification (10 classes)
-
----
-
-## 🖥️ How to Run the Project Locally
+* **Frontend**: HTML/CSS (within Flask templates)
+* **Backend**: Python, Flask
+* **ML/DL**: TensorFlow, Keras
+* **Dataset**: Fashion MNIST
+## 🛠️ How to Use
 
 1. **Clone the Repository**
+
    ```bash
    git clone https://github.com/Rithikabuddhiraj/Classification_using_CNN_classifier_on_Fashion_Mnist_Dataset.git
    cd Classification_using_CNN_classifier_on_Fashion_Mnist_Dataset
-````
+   ```
 
 2. **Install Dependencies**
-   Make sure you have Python 3.x installed. Then:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Run the Flask App**
+3. **Run the Application**
 
    ```bash
    python app.py
    ```
 
-4. **Open in Browser**
-   Go to `http://127.0.0.1:5000/` in your web browser.
+4. **Visit the Web App**
+   Open `http://127.0.0.1:5000` in your browser.
 
----
+## 🖼️ Sample Output
 
-## 🧪 Sample Prediction Flow
+* Upload an image of a fashion item (28x28 grayscale).
+* Get real-time predicted label with confidence score.
 
-1. User uploads a clothing image via the web form.
-2. Image is preprocessed and fed to the CNN model.
-3. Model returns a predicted class (e.g., "T-shirt", "Sandal").
-4. Result is displayed on `result.html`.
+## 📂 Project Structure
 
----
+* `model.py` – Model architecture and training script.
+* `app.py` – Flask app for serving the model.
+* `templates/` – HTML files for UI.
+* `static/` – (Optional) for custom CSS or image assets.
 
-## 🧾 Requirements
+## ✅ Status
 
-* Python 3.x
-* Flask
-* TensorFlow / Keras
-* NumPy
-* Pillow
-
-(See `requirements.txt` for full list.)
-
----
-
-## 📷 Example Output
-
-> 🖼️ Uploaded Image → 🧠 CNN → 🎯 Predicted Label: **Sneaker**
-
+> 📌 Completed and deployed locally. Ready for integration on cloud platforms if needed.
